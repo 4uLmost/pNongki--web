@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Tempat</title>
+</head>
+<body>
+    <header>
+        <h1>p<span>NONGKI!</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#berada">Home</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Detail</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div>
+                <p>Notifikasi</p>
+            </div>
+            <div>
+                <p>Login</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Daftarkan Tempat Baru</h2>
+            <p>Bantu kami melengkapi direktori tempat nongkrong dan olahraga di Bandung dengan mengisi formulir di bawah ini.</p>
+            
+            <form action="#" method="POST">
+                <label for="nama_tempat">Nama Tempat:</label><br>
+                <input type="text" id="nama_tempat" name="nama_tempat" required>
+                
+                <br><br>
+                
+                <label for="kategori">Kategori:</label><br>
+                <select id="kategori" name="kategori">
+                    <option value="warkop">Tempat Makan / Warkop</option>
+                    <option value="olahraga">Olahraga / Jogging</option>
+                    <option value="taman">Taman / Bersantai</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                
+                <br><br>
+                
+                <label for="alamat">Alamat Lengkap:</label><br>
+                <textarea id="alamat" name="alamat" rows="3" cols="50" required></textarea>
+                
+                <br><br>
+
+                <label for="jam_buka">Jam Operasional (Contoh: 08:00 - 22:00):</label><br>
+                <input type="text" id="jam_buka" name="jam_buka">
+
+                <br><br>
+                
+                <label for="file_foto">Foto Tempat:</label><br>
+                <input type="file" id="file_foto" name="file_foto">
+                
+                <br><br>
+                
+                <label for="deskripsi">Deskripsi Singkat:</label><br>
+                <textarea id="deskripsi" name="deskripsi" rows="5" cols="50" required></textarea>
+                
+                <br><br>
+                
+                <button type="submit">Simpan Rekomendasi</button>
+                <button type="reset">Batal</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Bandung p<span>NONGKI!</span>. ex-regol</p>
+    </footer>
+</body>
+</html>
