@@ -4,76 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="css/landing-page.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
     <header>
-        <h1>p<span>NONGKI!</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#berada">Home</a></li>
-                <li><a href="tambah-tempat.html">tambah tempat</a></li>
-                <li><a href="detail.html">Detail</a></li>
-            </ul>
-        </nav>
-        <div>
-            <div>
-                <p>Notifikasi</p>
-            </div>
-            <div>
-                <p>Login</p>
+        <div class="nav-container">
+            <h1>p<span>NONGKI!</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#berada" class="nav-active">Home</a></li>
+                    <li><a href="tambah-tempat.html">tambah tempat</a></li>
+                    <li><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <div class="login-nav">
+                <div>
+                    <p>Notifikasi</p>
+                </div>
+                <div>
+                    <p>Login</p>
+                </div>
             </div>
         </div>
     </header>
 
-    <hr>
-
     <main>
 
-        <section>
-            <h2>Temukan Spot Favoritmu!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio sed ut vitae aut neque ad explicabo dolores voluptate perferendis alias enim quos, doloremque dicta quod ab blanditiis veniam minus.</p>
+        <section class="container hero-section">
+            <div class="hero-judul">
+                <h2>Temukan Spot Favoritmu!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio sed ut vitae aut neque ad explicabo dolores voluptate perferendis alias enim quos, doloremque dicta quod ab blanditiis veniam minus.</p>
+                <a href="#">Cari Spot</a>
+            </div>
             
-            <form action="#" method="GET">
-                <label for="pencarian">Cari Tempat:</label>
-                <input type="text" id="pencarian" name="pencarian" placeholder="Contoh: Warkop, Taman, Jogging...">
-                <button type="submit">Cari</button>
-            </form>
+            <div class="hero-image">
+                <img src="" alt="">
+            </div>
         </section>
 
-        <hr>
-
-        <section>
+        <section class="container rekomendasi-section">
             <h2>Rekomendasi Terbaru</h2>
 
-            <article>
-                <img src="" alt="Suasana warkop dengan meja luas yang nyaman untuk mengerjakan tugas">
-                <h3>Warkop Area Kampus Telkom</h3>
-                <p><strong>Kategori:</strong> Tempat Makan / Warkop</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione rerum dicta, sit quo sequi quis labore voluptatibus esse eius fuga! Natus quidem error dicta quae nisi veniam velit est?</p>
-                <a href="detail.html">Lihat Detail & Maps</a>
-            </article>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="" alt="Suasana warkop dengan meja luas yang nyaman untuk mengerjakan tugas">
+                    <h3>Warkop Area Kampus Telkom</h3>
+                    <p><strong>Kategori:</strong> Tempat Makan / Warkop</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione rerum dicta, sit quo sequi quis labore voluptatibus esse eius fuga! Natus quidem error dicta quae nisi veniam velit est?</p>
+                    <a href="detail.html">Lihat Detail & Maps</a>
+                </article>
 
-            <article>
-                <img src="" alt="Lintasan lari luar ruangan dengan area terbuka yang luas">
-                <h3>Track Lari Gasibu</h3>
-                <p><strong>Kategori:</strong> Olahraga / Jogging</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ab iure error saepe exercitationem alias laboriosam non ipsum reprehenderit tempore provident nobis nihil est eos deserunt quidem! Error, quisquam saepe.</p>
-                <a href="detail.html">Lihat Detail & Maps</a>
-            </article>
+                <article class="card">
+                    <img src="" alt="Lintasan lari luar ruangan dengan area terbuka yang luas">
+                    <h3>Track Lari Gasibu</h3>
+                    <p><strong>Kategori:</strong> Olahraga / Jogging</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ab iure error saepe exercitationem alias laboriosam non ipsum reprehenderit tempore provident nobis nihil est eos deserunt quidem! Error, quisquam saepe.</p>
+                    <a href="detail.html">Lihat Detail & Maps</a>
+                </article>
 
-            <article>
-                <img src="" alt="Pemandangan pepohonan rindang di taman kota dengan tempat duduk">
-                <h3>Taman Hutan Kota</h3>
-                <p><strong>Kategori:</strong> Taman / Bersantai</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quia. Consequatur, tenetur amet rerum voluptates molestias odit et! Iusto sit cumque nihil numquam? Voluptas officiis porro est. Natus, ullam tenetur?</p>
-                <a href="detail.html">Lihat Detail & Maps</a>
-            </article>
+                <article class="card">
+                    <img src="" alt="Pemandangan pepohonan rindang di taman kota dengan tempat duduk">
+                    <h3>Taman Hutan Kota</h3>
+                    <p><strong>Kategori:</strong> Taman / Bersantai</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quia. Consequatur, tenetur amet rerum voluptates molestias odit et! Iusto sit cumque nihil numquam? Voluptas officiis porro est. Natus, ullam tenetur?</p>
+                    <a href="detail.html">Lihat Detail & Maps</a>
+                </article>
+            </div>
 
         </section>
 
     </main>
-
-    <hr>
 
     <footer>
         <p>&copy; 2026 Bandung p<span>NONGKI!</span>. ex-regol</p>
