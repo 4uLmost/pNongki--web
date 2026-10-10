@@ -4,116 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <link rel="stylesheet" href="css/detail.css">
 </head>
 <body>
     <header>
-        <h1>p<span>NONGKI!</span></h1>
-        <nav>
-            <ul>
-                <li><a href="landing-page.html">Home</a></li>
-                <li><a href="tambah-tempat.html">tambah tempat</a></li>
-                <li><a href="detail.html">Detail</a></li>
-            </ul>
-        </nav>
-        <div>
-            <div>
-                <p>Notifikasi</p>
-            </div>
-            <div>
-                <p>Login</p>
+        <div class="nav-container">
+            <h1>p<span>NONGKI!</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="landing-page.html">Home</a></li>
+                    <li><a href="tambah-tempat.html">tambah tempat</a></li>
+                    <li><a href="#detail" class="nav-active">Detail</a></li>
+                </ul>
+            </nav>
+            <div class="login-nav">
+                <div>
+                    <p>Notifikasi</p>
+                </div>
+                <div>
+                    <p>Login</p>
+                </div>
             </div>
         </div>
     </header>
 
-    <hr>
+    <main class="container detail-container">
+        <div class="detail-layout">
+            <article class="detail-card article-content">
+                <h2>Track Lari Gasibu</h2>
+                
+                <img src="https://via.placeholder.com/800x400?text=Foto+Detail+Gasibu" alt="Area lintasan lari utama di lapangan Gasibu dengan permukaan yang rata dan luas">
+                
+                <p class="category"><strong>Kategori:</strong> Olahraga / Jogging</p>
+                
+                <p class="description">Track Lari Gasibu adalah salah satu pusat olahraga terbuka yang paling populer di Bandung. Memiliki lintasan sintetis yang nyaman untuk pelari dari berbagai tingkat kemampuan. Tempat ini sangat direkomendasikan untuk menjaga kebugaran, baik untuk sesi lari ringan maupun latihan intensitas tinggi.</p>
+                
+                <h3>Fasilitas Tersedia</h3>
+                <ul class="facilities-list">
+                    <li>Lintasan lari karet (sintetis)</li>
+                    <li>Area pemanasan dan pendinginan</li>
+                    <li>Toilet umum dan ruang ganti</li>
+                    <li>Pedagang makanan ringan di area luar</li>
+                </ul>
+            </article>
 
-    <main>
-        <article>
-            <h2>Track Lari Gasibu</h2>
-            
-            <img src="https://via.placeholder.com/800x400?text=Foto+Detail+Gasibu" alt="Area lintasan lari utama di lapangan Gasibu dengan permukaan yang rata dan luas">
-            
-            <p><strong>Kategori:</strong> Olahraga / Jogging</p>
-            
-            <p>Track Lari Gasibu adalah salah satu pusat olahraga terbuka yang paling populer di Bandung. Memiliki lintasan sintetis yang nyaman untuk pelari dari berbagai tingkat kemampuan. Tempat ini sangat direkomendasikan untuk menjaga kebugaran, baik untuk sesi lari ringan maupun latihan intensitas tinggi.</p>
-            
-            <h3>Fasilitas Tersedia</h3>
-            <ul>
-                <li>Lintasan lari karet (sintetis)</li>
-                <li>Area pemanasan dan pendinginan</li>
-                <li>Toilet umum dan ruang ganti</li>
-                <li>Pedagang makanan ringan di area luar</li>
-            </ul>
-        </article>
+            <aside class="detail-card sidebar-content">
+                <h3>Informasi Operasional</h3>
+                <p><strong>Alamat:</strong> Jl. Diponegoro, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat</p>
+                
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Peta+Lokasi" alt="Peta lokasi yang menunjukkan titik akurat Track Lari Gasibu di Jalan Diponegoro">
+                    <figcaption>Peta Lokasi Gasibu</figcaption>
+                </figure>
+                
+                <a href="maps.html" class="map-btn">Navigasi</a>
+                
+                <h3>Jadwal Buka</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Jam Operasional</th>
+                            <th>Status Kepadatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Senin - Jumat</td>
+                            <td>05:00 - 18:00</td>
+                            <td>Sedang</td>
+                        </tr>
+                        <tr>
+                            <td>Sabtu - Minggu</td>
+                            <td>05:00 - 10:00</td>
+                            <td>Sangat Ramai</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </div>
 
-        <aside>
-            <h3>Informasi Operasional</h3>
-            <p><strong>Alamat:</strong> Jl. Diponegoro, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat</p>
-            
-            <figure>
-                <img src="https://via.placeholder.com/300x200?text=Peta+Lokasi" alt="Peta lokasi yang menunjukkan titik akurat Track Lari Gasibu di Jalan Diponegoro">
-                <figcaption>Peta Lokasi Gasibu</figcaption>
-            </figure>
-            
-            <a href="maps.html">Buka di Peta Layar Penuh</a>
-            
-            <h3>Jadwal Buka</h3>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Hari</th>
-                        <th>Jam Operasional</th>
-                        <th>Status Kepadatan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Senin - Jumat</td>
-                        <td>05:00 - 18:00</td>
-                        <td>Sedang</td>
-                    </tr>
-                    <tr>
-                        <td>Sabtu - Minggu</td>
-                        <td>05:00 - 10:00</td>
-                        <td>Sangat Ramai</td>
-                    </tr>
-                </tbody>
-            </table>
-        </aside>
-
-        <hr>
-
-        <section>
+        <section class="detail-card review-section">
             <h3>Tinggalkan Ulasan</h3>
-            <form action="#" method="POST">
-                <label for="nama_pengunjung">Nama Anda:</label>
-                <input type="text" id="nama_pengunjung" name="nama_pengunjung">
+            <form action="#" method="POST" class="review-form">
+                <div class="form-group">
+                    <label for="nama_pengunjung">Nama Anda:</label>
+                    <input type="text" id="nama_pengunjung" name="nama_pengunjung" placeholder="Masukkan nama Anda">
+                </div>
                 
-                <br><br>
+                <div class="form-group">
+                    <label for="rating_tempat">Beri Rating:</label>
+                    <select id="rating_tempat" name="rating_tempat">
+                        <option value="5">Sangat Bagus</option>
+                        <option value="4">Bagus</option>
+                        <option value="3">Biasa Saja</option>
+                        <option value="2">Kurang</option>
+                        <option value="1">Buruk</option>
+                    </select>
+                </div>
                 
-                <label for="rating_tempat">Beri Rating:</label>
-                <select id="rating_tempat" name="rating_tempat">
-                    <option value="5">Sangat Bagus</option>
-                    <option value="4">Bagus</option>
-                    <option value="3">Biasa Saja</option>
-                    <option value="2">Kurang</option>
-                    <option value="1">Buruk</option>
-                </select>
+                <div class="form-group">
+                    <label for="isi_ulasan">Ulasan Anda:</label>
+                    <textarea id="isi_ulasan" name="isi_ulasan" rows="4" placeholder="Tulis ulasan Anda..."></textarea>
+                </div>
                 
-                <br><br>
-                
-                <label for="isi_ulasan">Ulasan Anda:</label><br>
-                <textarea id="isi_ulasan" name="isi_ulasan" rows="4" cols="50"></textarea>
-                
-                <br><br>
-                
-                <button type="submit">Kirim Ulasan</button>
+                <button type="submit" class="submit-btn">Kirim Ulasan</button>
             </form>
         </section>
 
     </main>
-
-    <hr>
 
     <footer>
         <p>&copy; 2026 Bandung p<span>NONGKI!</span>. ex-regol</p>
