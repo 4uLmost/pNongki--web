@@ -102,4 +102,195 @@
     border-radius: 50%;
     font-size: 12px;
     font-weight: bold;
+/* Sidebar */
+.sidebar-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #8B9A6E;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.sidebar-content h3:first-of-type {
+    margin-top: 0;
+}
+
+.sidebar-content p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.sidebar-content p strong {
+    color: #222222;
+}
+
+.sidebar-content figure {
+    margin: 12px 0;
+}
+
+.sidebar-content figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    display: block;
+}
+
+.sidebar-content figcaption {
+    font-size: 12px;
+    color: #888888;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.map-btn {
+    display: block;
+    text-align: center;
+    background-color: #8B9A6E;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 14px 0 20px 0;
+    transition: background-color 0.2s ease;
+}
+
+.map-btn:hover {
+    background-color: #76845c;
+}
+
+/* Jadwal buka table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.schedule-table th {
+    background-color: #8B9A6E;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 12px;
+    text-align: left;
+    border: none;
+}
+
+.schedule-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #444444;
+    border-bottom: 1px solid #eee;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f9faf8;
+}
+
+/* Review section */
+.review-section {
+    margin-top: 30px;
+}
+
+.review-section h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FF9D50;
+    margin-bottom: 20px;
+}
+
+.review-form .form-group {
+    margin-bottom: 16px;
+}
+
+.review-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-form input[type="text"]:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    border-color: #8B9A6E;
+    box-shadow: 0 0 0 3px rgba(139, 154, 110, 0.2);
+}
+
+.review-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #8B9A6E;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #76845c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: #777777;
+    font-size: 14px;
+}
+
+footer span {
+    color: #FF9D50;
+    font-weight: 700;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 868px) {
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .review-form input[type="text"],
+    .review-form select,
+    .review-form textarea {
+        max-width: 100%;
+    }
 }
