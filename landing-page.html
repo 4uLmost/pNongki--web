@@ -4,9 +4,9 @@ Detail.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/landing-page.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/detail.css">
 </head>
 <body>
     <header>
@@ -14,9 +14,9 @@ Detail.html
             <h1>p<span>NONGKI!</span></h1>
             <nav>
                 <ul>
-                    <li><a href="landing-page.html">Home</a></li>
+                    <li><a href="#berada" class="nav-active">Home</a></li>
                     <li><a href="tambah-tempat.html">tambah tempat</a></li>
-                    <li><a href="#detail" class="nav-active">Detail</a></li>
+                    <li><a href="detail.html">Detail</a></li>
                 </ul>
             </nav>
             <div class="login-nav">
@@ -30,61 +30,48 @@ Detail.html
         </div>
     </header>
 
-    <main class="container detail-container">
-        <div class="detail-layout">
-            <article class="detail-card article-content">
-                <h2>Track Lari Gasibu</h2>
-                
-                <img src="https://via.placeholder.com/800x400?text=Foto+Detail+Gasibu" alt="Area lintasan lari utama di lapangan Gasibu dengan permukaan yang rata dan luas">
-                
-                <p class="category"><strong>Kategori:</strong> Olahraga / Jogging</p>
-                
-                <p class="description">Track Lari Gasibu adalah salah satu pusat olahraga terbuka yang paling populer di Bandung. Memiliki lintasan sintetis yang nyaman untuk pelari dari berbagai tingkat kemampuan. Tempat ini sangat direkomendasikan untuk menjaga kebugaran, baik untuk sesi lari ringan maupun latihan intensitas tinggi.</p>
-                
-                <h3>Fasilitas Tersedia</h3>
-                <ul class="facilities-list">
-                    <li>Lintasan lari karet (sintetis)</li>
-                    <li>Area pemanasan dan pendinginan</li>
-                    <li>Toilet umum dan ruang ganti</li>
-                    <li>Pedagang makanan ringan di area luar</li>
-                </ul>
-            </article>
+    <main>
 
-            <aside class="detail-card sidebar-content">
-                <h3>Informasi Operasional</h3>
-                <p><strong>Alamat:</strong> Jl. Diponegoro, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat</p>
-                
-                <figure>
-                    <img src="https://via.placeholder.com/300x200?text=Peta+Lokasi" alt="Peta lokasi yang menunjukkan titik akurat Track Lari Gasibu di Jalan Diponegoro">
-                    <figcaption>Peta Lokasi Gasibu</figcaption>
-                </figure>
-                
-                <a href="maps.html" class="map-btn">Navigasi</a>
-                
-                <h3>Jadwal Buka</h3>
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Hari</th>
-                            <th>Jam Operasional</th>
-                            <th>Status Kepadatan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Senin - Jumat</td>
-                            <td>05:00 - 18:00</td>
-                            <td>Sedang</td>
-                        </tr>
-                        <tr>
-                            <td>Sabtu - Minggu</td>
-                            <td>05:00 - 10:00</td>
-                            <td>Sangat Ramai</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </aside>
-        </div>
+        <section class="container hero-section">
+            <div class="hero-judul">
+                <h2>Temukan Spot Favoritmu!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio sed ut vitae aut neque ad explicabo dolores voluptate perferendis alias enim quos, doloremque dicta quod ab blanditiis veniam minus.</p>
+                <a href="#">Cari Spot</a>
+            </div>
+            
+            <div class="hero-image">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section class="container rekomendasi-section">
+            <h2>Rekomendasi Terbaru</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <img src="" alt="Suasana warkop dengan meja luas yang nyaman untuk mengerjakan tugas">
+                    <h3>Warkop Area Kampus Telkom</h3>
+                    <p><strong>Kategori:</strong> Tempat Makan / Warkop</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione rerum dicta, sit quo sequi quis labore voluptatibus esse eius fuga! Natus quidem error dicta quae nisi veniam velit est?</p>
+                    <a href="detail.html">Lihat Detail & Maps</a>
+                </article>
+
+                <article class="card">
+                    <img src="" alt="Lintasan lari luar ruangan dengan area terbuka yang luas">
+                    <h3>Track Lari Gasibu</h3>
+                    <p><strong>Kategori:</strong> Olahraga / Jogging</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ab iure error saepe exercitationem alias laboriosam non ipsum reprehenderit tempore provident nobis nihil est eos deserunt quidem! Error, quisquam saepe.</p>
+                    <a href="detail.html">Lihat Detail & Maps</a>
+                </article>
+
+                <article class="card">
+                    <img src="" alt="Pemandangan pepohonan rindang di taman kota dengan tempat duduk">
+                    <h3>Taman Hutan Kota</h3>
+                    <p><strong>Kategori:</strong> Taman / Bersantai</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quia. Consequatur, tenetur amet rerum voluptates molestias odit et! Iusto sit cumque nihil numquam? Voluptas officiis porro est. Natus, ullam tenetur?</p>
+                    <a href="detail.html">Lihat Detail & Maps</a>
+                </article>
+            </div>
 
         <section class="detail-card review-section">
             <h3>Tinggalkan Ulasan</h3>
