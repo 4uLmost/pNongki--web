@@ -1,0 +1,105 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.detail-container {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+/* 2-Column Grid Layout (Article + Aside) */
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* Card Styling (Konsisten dengan landing-page.css) */
+.detail-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Main Article */
+.article-content h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #FF9D50;
+    margin-bottom: 16px;
+}
+
+.article-content img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.article-content .category {
+    font-size: 15px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.article-content .category strong {
+    color: #8B9A6E;
+}
+
+.article-content .description {
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.article-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #8B9A6E;
+    margin-bottom: 12px;
+}
+
+.facilities-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.facilities-list li {
+    font-size: 14px;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.facilities-list li::before {
+    content: "✓";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(139, 154, 110, 0.15);
+    color: #8B9A6E;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
