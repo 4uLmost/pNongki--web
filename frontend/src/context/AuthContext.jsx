@@ -19,7 +19,8 @@ const DEMO_USER = {
 
 function resolveUserRole(email, userMetaRole, dbUserRole) {
   const cleanEmail = (email || '').toLowerCase().trim();
-
+  const isSuper = cleanEmail === 'superadmin@admin.pnongki' || userMetaRole === 'super_admin' || dbUserRole === 'super_admin';
+  if (isSuper) return 'super_admin';
   const isAdmin = cleanEmail.includes('@admin.pnongki') || cleanEmail.endsWith('@admin.pnongki') || userMetaRole === 'admin' || dbUserRole === 'admin';
   if (isAdmin) return 'admin';
   if (dbUserRole) {
