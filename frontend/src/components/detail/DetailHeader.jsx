@@ -11,7 +11,10 @@ export default function DetailHeader({
   showToast,
   handleCopyInviteLink,
 }) {
-  const displayRating = Number(currentPlace.rating || 0).toFixed(1);
+  const displayRating =
+    Number(currentPlace.rating) > 0
+      ? Number(currentPlace.rating).toFixed(1)
+      : 'Baru';
 
   const displayReviewsCount =
     reviewCount !== undefined && reviewCount !== null
