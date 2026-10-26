@@ -30,7 +30,9 @@ async function request(endpoint, options = {}) {
     return await response.json();
   } catch (err) {
     clearTimeout(timeoutId);
-
+    if (err.name === 'AbortError') {
+      throw new Error(`Permintaan ke backend API melebihi batas waktu (timeout). Pastikan server backend sedang berjalan.`);
+    }
     if (err.message && err.message.includes('Failed to fetch')) {
       throw new Error('Tidak dapat terhubung ke server backend API pNongki. Pastikan server backend berjalan di http://localhost:3000.');
     }
@@ -39,6 +41,7 @@ async function request(endpoint, options = {}) {
 }
 
 function mapDbPlaceToUi(item) {
+  if (!item) return null;
   const details = Array.isArray(item.place_details) ? item.place_details[0] : item.place_details;
   const img =
     item.cover_image_url ||
