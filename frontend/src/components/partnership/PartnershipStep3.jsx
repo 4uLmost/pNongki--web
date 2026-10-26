@@ -33,7 +33,12 @@ export default function PartnershipStep3({
         <label className="text-xs font-bold text-[#242424]">
           Layanan yang Ingin Diaktifkan <span className="text-red-500">*</span>
         </label>
-
+        {fieldErrors.perks && (
+          <p className="text-xs text-red-600 font-semibold flex items-center gap-1">
+            <span className="material-symbols-outlined text-[14px]">error</span>
+            {fieldErrors.perks}
+          </p>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {PERKS_OPTIONS.map((perk) => {
             const isChecked = selectedPerks.includes(perk.id);
