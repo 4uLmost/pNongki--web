@@ -15,6 +15,7 @@ export default function WebAcquisitionModal({
     >
       <div
         className="bg-surface-card rounded-3xl max-w-md w-full p-6 md:p-8 shadow-2xl border border-border-hairline relative text-center"
+        onClick={(e) => e.stopPropagation()}
       >
         <button
           type="button"
