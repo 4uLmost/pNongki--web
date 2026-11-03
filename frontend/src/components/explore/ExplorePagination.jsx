@@ -8,6 +8,7 @@ export default function ExplorePagination({
   totalPages,
   onPageChange,
 }) {
+  if (totalItems <= 0) return null;
 
   return (
     <div className="p-4 rounded-2xl border border-border-hairline bg-surface-card flex flex-col sm:flex-row items-center justify-between gap-3 shadow-xs mt-2">
