@@ -26,6 +26,10 @@ const VALID_PAGES = ['beranda', 'explore', 'detail', 'tambah-tempat', 'feeds', '
 
 function getInitialPage() {
   try {
+    const hash = window.location.hash.replace('#', '').trim();
+    if (hash && VALID_PAGES.includes(hash)) {
+      return hash;
+    }
     const saved = localStorage.getItem('pnongki_current_page');
     if (saved && VALID_PAGES.includes(saved)) {
       return saved;
