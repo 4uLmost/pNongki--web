@@ -39,7 +39,11 @@ export default function TambahTempatSuccessModal({
           </p>
         </div>
 
-
+        {submissionId && (
+          <div className="p-3 bg-[#F8F8F6] rounded-2xl border border-[#E8E8E4] text-xs font-mono text-[#6E6E6B]">
+            ID Antrean: <strong className="text-[#242424] font-bold">{submissionId}</strong>
+          </div>
+        )}
 
         <div className="flex flex-col gap-2 pt-2">
           {isAdmin ? (

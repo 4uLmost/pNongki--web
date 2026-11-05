@@ -76,7 +76,12 @@ export default function TambahTempatStep3({
           </span>
         </div>
 
-
+        {fieldErrors.photos && (
+          <p className="text-xs text-red-600 font-semibold flex items-center gap-1 mt-0.5">
+            <span className="material-symbols-outlined text-[14px]">error</span>
+            {fieldErrors.photos}
+          </p>
+        )}
 
         {uploadedPhotos.length === 0 ? (
           <div className="p-8 border border-dashed border-[#E8E8E4] rounded-2xl bg-[#F8F8F6] text-center flex flex-col items-center justify-center">
