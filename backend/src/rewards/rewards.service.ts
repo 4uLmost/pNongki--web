@@ -82,7 +82,9 @@ export class RewardsService {
       throw new BadRequestException('Reward tidak ditemukan di database.');
     }
 
-
+    if (reward.stock <= 0) {
+      throw new BadRequestException('Stok reward ini sudah habis.');
+    }
 
     const userPoints = currentPoints ?? 0;
     if (userPoints < reward.point_cost) {

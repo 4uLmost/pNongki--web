@@ -16,6 +16,7 @@ export default function EditProfileModal({
     >
       <div
         className="bg-surface-card rounded-3xl max-w-md w-full p-6 md:p-7 shadow-2xl border border-border-hairline relative"
+        onClick={(e) => e.stopPropagation()}
       >
         <button
           type="button"
