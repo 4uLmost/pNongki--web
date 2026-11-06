@@ -38,7 +38,13 @@ export default function DetailPage({
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const [bookingGuestCount, setBookingGuestCount] = useState(2);
-  const [bookingDate, setBookingDate] = useState('2026-11-08');
+  const [bookingDate, setBookingDate] = useState(() => {
+    try {
+      return new Date().toISOString().split('T')[0];
+    } catch {
+      return '2026-11-08';
+    }
+  });
   const [bookingTime, setBookingTime] = useState('14:00');
   const [bookingSeating, setBookingSeating] = useState('indoor');
   const [bookingSuccess, setBookingSuccess] = useState(false);

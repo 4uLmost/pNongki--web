@@ -67,7 +67,7 @@ export default function DetailReviewsTab({
           <div className="flex-1 w-full space-y-2">
             {[5, 4, 3, 2, 1].map((s) => {
               const count = reviews.filter((r) => Math.round(Number(r.rating || r.score)) === s).length;
-              const pct = (count / totalReviews) * 100;
+              const pct = totalReviews > 0 ? (count / totalReviews) * 100 : 0;
               return (
                 <div key={s} className="flex items-center gap-3">
                   <span className="w-14 text-xs font-semibold text-on-surface flex items-center gap-1">
