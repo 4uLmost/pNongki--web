@@ -66,6 +66,7 @@ export default function AdminDashboardPage({ onNavigate, onSelectPlace }) {
   };
 
   const loadAdminUsers = async () => {
+    if (!isSuperAdmin) return;
     setIsAdminUsersLoading(true);
     setAdminUsersError(null);
     try {
