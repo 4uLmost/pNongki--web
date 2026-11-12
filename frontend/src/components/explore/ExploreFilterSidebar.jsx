@@ -232,7 +232,9 @@ export default function ExploreFilterSidebar({
           <span className="font-extrabold text-charcoal-subtle uppercase tracking-wider text-[11px]">
             Maksimal Radius
           </span>
-          <span className="font-bold text-primary text-xs">&lt; {maxDistance.toFixed(1)} km</span>
+          <span className="font-bold text-primary text-xs">
+            {maxDistance >= 25 ? 'Semua Jarak' : `< ${maxDistance.toFixed(1)} km`}
+          </span>
         </div>
         <input
           className="w-full h-1.5 bg-surface-container rounded-lg accent-primary cursor-pointer"
@@ -246,7 +248,7 @@ export default function ExploreFilterSidebar({
         <div className="flex justify-between text-[10px] text-charcoal-subtle font-medium">
           <span>1 km</span>
           <span>12 km</span>
-          <span>25 km</span>
+          <span>Semua</span>
         </div>
       </div>
     </aside>
