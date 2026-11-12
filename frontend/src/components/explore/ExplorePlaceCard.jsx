@@ -100,7 +100,7 @@ export default function ExplorePlaceCard({
       <div className="pt-3.5 mt-3.5 border-t border-border-hairline flex items-center justify-between">
         <span className="text-xs font-semibold text-charcoal-subtle flex items-center gap-1">
           <span className="material-symbols-outlined text-[14px] text-primary">directions_walk</span>
-          <span>{place.distanceKm || '1.2'} km dari Anda</span>
+          <span>{typeof place.distanceKm === 'number' ? place.distanceKm.toFixed(1) : (place.distanceKm || '1.2')} km dari Anda</span>
         </span>
         <button
           type="button"
